@@ -1,0 +1,157 @@
+body, html {
+  height: 100%;
+  background-image: url(bg_art.jpg);
+    
+  /* Full height */
+
+  /* Center and scale the image nicely */
+  background-attachment: fixed;
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 0; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #202020; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 5px;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ba2326;
+    display: block;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .main-container {
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-right: 20px;
+  }
+
+  .container{
+    height: auto;
+  }
+
+  ul.no-bullets {
+    list-style-type: none; /* Remove bullets */
+    padding-left: 20px; /* Remove padding */
+    margin: 0; /* Remove margins */
+  }
+
+  .fakeimg {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    background-color: #aaa;
+    padding: 20px;
+  }
+  
+  .header{
+    width: 100%;
+    background-color: #303030;
+    height: 70px;
+    padding-top: 10px;
+    position: fixed;
+    top: 0;
+  }
+
+  .header-child{
+    color: #ba2326;
+    float: right;
+  }
+
+  .header a:hover {
+    color: #f1f1f1;
+  }
+
+  .menu {
+    font-size:30px;
+    cursor:pointer;
+    color: #ba2326;
+    margin-left: 20px;
+    padding-top: 20px;
+    width: 50%;
+  }
+
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #202020;
+  }
+
+  input:checked ~ .checkmark {
+    background-color: #ba2326;
+  }
+
+  button {
+    background-color: #ba2326;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #303030;
+  }
+
+  .footer{
+    margin-top: 20px;
+    bottom: 0;
+    background-color: #303030;
+    height: 100px;
+  }
+
+  #anim {
+    transition: margin-left .5s;
+  }
+
+  #mySidenav {
+    transition: width .5s;
+  }
+
+  #menu {
+    transition: color .5s;
+  }
+
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }

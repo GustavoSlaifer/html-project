@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <title>Test</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="{{ url_for('static',     filename='thinking-emoji.png') }}">
+</head>
+<body>
+  {% extends "template.html" %}
+  {% block content %}
+
+  <div class="container">    
+    <div class="fakeimg" style="height: auto; margin-top: 90px;"><h1>Welcome to the <strong>LOGIN PAGE!!</strong></h1></div>
+  </div> 
+  <div class="container">
+  <form action="/action_page.php" method="post" style="margin-left: 20px;margin-top: 20px;margin-right: 20px; text-align: center;">
+    <div class="fakeimg">
+      <img src="{{ url_for('static',     filename='thinking-emoji.png') }}" alt="Avatar" class="avatar">
+    </div>
+  
+    <div class="fakeimg">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+          
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" name="remember" style="background-color: #ba2326;"> Remember me
+      </label>
+    </div>
+    <div class="fakeimg">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </div>
+  </form>
+
+  {% endblock %}
+  <div class="footer"></div>
+</body>
+</html>

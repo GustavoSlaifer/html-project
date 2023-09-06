@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="{{ url_for('static',     filename='thinking-emoji.png') }}">
+  <script>
+    function myFunction() {
+      if (document.getElementById("demo").innerHTML == "Welcome to the <strong>HOME PAGE!</strong>") {
+        document.getElementById("demo").innerHTML = "Have a nice day!"
+      } else {
+        document.getElementById("demo").innerHTML = "Welcome to the <strong>HOME PAGE!</strong>"
+      }
+    }
+    </script>
+</head>
+<body>
+  {% extends "template.html" %}
+  {% block content %}
+
+    <div class="container">    
+        <div class="fakeimg" style="height: auto; margin-top: 90px;">
+            <h1 id="demo" style="padding-left: 15px">Welcome to the <strong>HOME PAGE!</strong></h1>
+            <button type="button" style="margin-left: 15px" onclick="myFunction()">Click me</button>
+        </div>
+    </div>
+    <div class="container">    
+        <div class="fakeimg" style="height: auto;">
+          <h1 style="padding-left: 15px; padding-bottom: 20px;">Content Title</h1>
+          <p style="padding-left: 15px;">
+            Content...<br>
+            <br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at pellentesque ligula, in cursus lacus.<br>
+            Etiam ut ullamcorper tortor. Aliquam arcu elit, pharetra ut quam eget, tempor molestie velit.<br>
+            Nulla eget orci sit amet lorem pellentesque tincidunt sit amet vitae ipsum. Cras blandit semper lectus, sed sagittis massa sodales ac.<br>
+            In condimentum ultrices erat vel pellentesque. Integer faucibus elementum purus sed malesuada.<br>
+            <br>
+            Sed eu dolor non purus hendrerit feugiat. Fusce lobortis elit quam, et luctus nunc auctor at.<br>
+            Pellentesque varius, erat vitae semper porttitor, enim lacus aliquet urna, lacinia varius mi urna vel sem.<br>
+            Ut non tellus sed lorem ullamcorper aliquam. Proin elementum mattis orci, vel aliquet turpis faucibus at.<br>
+            Sed accumsan finibus lorem ut egestas. Praesent consectetur ultrices turpis.<br>
+          </p>
+        </div>
+    </div> 
+    <div class="container">    
+        <div class="fakeimg" style="height: 150px;">Container test</div>
+    </div>
+    <div class="container">    
+        <div class="fakeimg" style="height: 400px;">Container test</div>
+    </div>
+    
+  {% endblock %}
+  <div class="footer"></div>
+</body>
+</html>
